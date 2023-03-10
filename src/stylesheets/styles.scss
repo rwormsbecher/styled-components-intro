@@ -1,0 +1,120 @@
+$background-color: #f3eae3;
+$primary-color: #3d8168;
+$primary-color-hover: #326755;
+$header-color: #192026;
+$text-color: #85858e;
+
+:root,
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+#root {
+    background-color: $background-color;
+    color: $text-color;
+    font-family: "Roboto", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+        display: flex;
+        width: 600px;
+        height: 450px;
+        background-color: white;
+        border-radius: 1.5em;
+
+        .card-left-section {
+            display: flex;
+            width: 50%;
+            height: 100%;
+            border-radius: 1.5em 0 0 1.5em;
+
+            img {
+                border-radius: 1.5em 0 0 1.5em;
+                width: 100%;
+            }
+        }
+
+        .card-right-section {
+            display: flex;
+            width: 50%;
+            height: 100%;
+            min-height: 100%;
+            padding: 1.5em;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 0 1.5em 1.5em 0;
+
+            h1 {
+                font-size: 0.8rem;
+                letter-spacing: 8px;
+                text-transform: uppercase;
+                font-weight: 100;
+                margin-bottom: 1rem;
+            }
+
+            h2 {
+                font-family: "Merriweather", serif;
+                font-size: 1.75rem;
+                font-weight: bold;
+                color: $header-color;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                line-height: 1.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .price-container {
+                width: 100%;
+                height: 32px;
+                display: flex;
+                align-items: center;
+
+                h3 {
+                    font-size: 24px;
+                    color: $primary-color;
+                    margin-right: 1.5rem;
+                }
+
+                span {
+                    text-decoration: line-through;
+                }
+            }
+
+            .button-container {
+                button {
+                    width: 100%;
+                    border-radius: 0.25rem;
+                    color: white;
+                    background: $primary-color;
+                    outline: none;
+                    border: 1px solid $primary-color;
+                    padding: 8px 0;
+                    font-size: 16px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: $primary-color-hover;
+                    }
+                }
+            }
+        }
+    }
+}
