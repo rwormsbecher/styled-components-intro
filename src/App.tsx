@@ -1,3 +1,4 @@
+import { Button } from "./components/ui/Button";
 import { CardContainer, CardLeftSide, CardRightSide } from "./components/ui/Card";
 import { SpacedHeader } from "./components/ui/SpacedHeader";
 import "./stylesheets/styles.scss";
@@ -30,9 +31,7 @@ function App() {
                                 </div>
                             </div>
 
-                            <div className="button-container">
-                                <button>Add to cart</button>
-                            </div>
+                            <Button disabled text="Add to cart"></Button>
                         </>
                     </CardRightSide>
                 </>
