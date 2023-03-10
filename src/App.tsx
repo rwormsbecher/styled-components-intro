@@ -2,7 +2,6 @@ import { Button } from "./components/ui/Button";
 import { CardContainer, CardLeftSide, CardRightSide } from "./components/ui/Card";
 import { Container } from "./components/ui/Container";
 import { SpacedHeader } from "./components/ui/SpacedHeader";
-import "./stylesheets/styles.scss";
 
 function App() {
     return (
