@@ -35,7 +35,7 @@ const CardRight = styled(CardSide)`
         font-family: "Merriweather", serif;
         font-size: 1.75rem;
         font-weight: bold;
-        color: $header-color;
+        color: ${(themeProps) => themeProps.theme.colors.headerColor};
         margin-bottom: 1rem;
     }
 
@@ -52,7 +52,7 @@ const CardRight = styled(CardSide)`
 
         h3 {
             font-size: 24px;
-            color: $primary-color;
+            color: ${(themeProps) => themeProps.theme.colors.primaryColor};
             margin-right: 1.5rem;
         }
 
