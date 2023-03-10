@@ -1,3 +1,4 @@
+import { SpacedHeader } from "./components/ui/SpacedHeader";
 import "./stylesheets/styles.scss";
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
                 </div>
                 <div className="card-right-section">
                     <div>
-                        <h1>Perfume</h1>
+                        <SpacedHeader text="perfume" />
                         <h2>
                             Gabrielle
                             <br /> Essence Eau
